@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>醫療內視鏡辨識APP</title>
+    <link href="/2024/11/11/%E9%86%AB%E7%99%82%E5%85%A7%E8%A6%96%E9%8F%A1%E8%BE%A8%E8%AD%98APP/"/>
+    <url>/2024/11/11/%E9%86%AB%E7%99%82%E5%85%A7%E8%A6%96%E9%8F%A1%E8%BE%A8%E8%AD%98APP/</url>
+    
+    <content type="html"><![CDATA[<h1 id="醫療內視鏡辨識app">醫療內視鏡辨識APP</h1><h2 id="作品簡介">作品簡介</h2><p>在現代醫療體系中，醫療內視鏡是診斷與治療的核心工具之一。內視鏡的型號與尺寸繁多，針對不同手術需求有不同的規格。因此，醫護人員在日常工作中，經常需要花費大量時間來查找和對應不同型號的內視鏡，以確保每一次使用都符合手術要求。在手術前的準備過程中，快速而準確地識別內視鏡的型號對於提高效率至關重要。然而，手動辨識過程耗時且容易出現錯誤，因此開發一個自動辨識APP成為了這個專案的目標。</p><p>展示影片：<a href="https://youtube.com/shorts/Va9oA0SzIDU?feature=share">https://youtube.com/shorts/Va9oA0SzIDU?feature=share</a></p><p><img src="/img/scope.png" /></p><h2 id="作品目的">作品目的</h2><p>這款醫療內視鏡辨識APP的主要目的是通過影像辨識技術來協助醫護人員快速辨別內視鏡型號，並將其編號準確地顯示在螢幕上。這樣一來，醫護人員只需簡單地拍攝內視鏡，即可自動獲得其型號信息，從而加快了內視鏡的收納和整理過程，大幅提升了工作效率，減少了人為錯誤的風險。</p><h2 id="技術實現">技術實現</h2><p>該APP的開發基於計算機視覺與深度學習技術。具體實現過程包括：</p><ul><li><p>數據收集與標註：首先，我們收集了大量不同型號的醫療內視鏡圖片，並且對每張圖片進行了型號標註，這些標註數據將作為模型訓練的基礎數據。</p></li><li><p>模型訓練：我們採用了卷積神經網絡（CNN）模型進行訓練，該模型經過大量圖片的訓練後，能夠自動識別出內視鏡的形狀特徵並匹配相應型號。</p></li><li><p>精度優化：為了達到醫療領域的精確要求，我們針對內視鏡的特徵進行了多次優化和微調，包括調整模型參數和增加數據增強技術，以提升辨識精度和速度。</p></li><li><p>APP介面設計：考慮到醫護人員的使用便利性，APP採用了簡單易懂的操作介面，用戶只需開啟相機對準內視鏡，即可在螢幕上看到即時辨識結果，無需額外的操作步驟。</p></li></ul><h2 id="成果展示">成果展示</h2><p>從上傳的影像（如上圖所示）可以看到，APP已成功辨識出多個不同型號的內視鏡，並且在每個內視鏡上方顯示了對應的編號與置信度。這意味著該APP不僅能夠精確定位不同內視鏡的型號，還可以快速處理多個目標，讓醫護人員能夠在短時間內高效完成整理和歸類。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>產學計畫</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Wifi 遙控四驅車</title>
+    <link href="/2022/08/04/Wifi%E9%81%99%E6%8E%A7%E5%9B%9B%E9%A9%85%E8%BB%8A/"/>
+    <url>/2022/08/04/Wifi%E9%81%99%E6%8E%A7%E5%9B%9B%E9%A9%85%E8%BB%8A/</url>
+    
+    <content type="html"><![CDATA[<h1 id="wifi-遙控四驅車">Wifi 遙控四驅車</h1><h2 id="作品簡介">作品簡介</h2><p>這款 WiFi 遙控四驅車 是一個利用網路技術遠端遙控的智能車，旨在透過無線連接進行前後控制。該四驅車使用了 ESP8266 模組進行 MQTT 通訊，並通過繼電器控制電流流向來改變馬達轉向，使車輛能夠靈活地向前或向後行駛。此裝置展現了物聯網技術在移動設備中的應用，為無線控制車輛提供了一個簡單的方案。</p><p>展示影片: <a href="https://youtube.com/shorts/KSWWMaxipGc?feature=share">https://youtube.com/shorts/KSWWMaxipGc?feature=share</a></p><p><img src="/img/car.png" /></p><h2 id="元件與結構">元件與結構</h2><p><img src="/img/car_inside.png" /></p><ul><li>ESP8266 模組：作為四驅車的主控模組，透過 WiFi 連接到網路，並經由 MQTT 通訊協議接收遠端遙控器的指令。</li><li>四驅馬達：每個輪子配備獨立馬達，提供強勁的驅動力，確保車輛在各種地形上都能平穩行駛。</li><li>繼電器模組：用於切換電流方向，以改變馬達的轉動方向，從而實現車輛的前進與後退。</li><li>遙控器：搭配兩顆按鈕（綠色和紅色），分別用來控制四驅車的前進與後退，操作簡單直觀。 工作原理</li><li>遠端控制：ESP8266 模組連接到 WiFi 網路，並通過 MQTT 通訊協議與遙控器進行數據交換。</li><li>訊號接收：當遙控器上的按鈕被按下時，MQTT 伺服器會將指令傳送至 ESP8266，該模組會解析並將指令傳送至繼電器模組。</li><li>馬達控制：繼電器模組根據接收到的指令改變電流方向，從而控制馬達的轉動方向，實現車輛的前進或後退。</li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>案子</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>打殭屍遊戲機</title>
+    <link href="/2022/08/04/%E6%89%93%E6%AE%AD%E5%B1%8D%E9%81%8A%E6%88%B2%E6%A9%9F/"/>
+    <url>/2022/08/04/%E6%89%93%E6%AE%AD%E5%B1%8D%E9%81%8A%E6%88%B2%E6%A9%9F/</url>
+    
+    <content type="html"><![CDATA[<h1 id="打殭屍遊戲機">打殭屍遊戲機</h1><h2 id="作品簡介">作品簡介</h2><p>這款打殭屍遊戲機是一個基於 Arduino 的迷你遊戲裝置，設計靈感源自小時候經典的街機遊戲。這個裝置使用了 8x8 LED 點矩陣顯示器、雙位七段顯示器以及三顆按鈕，模擬了打擊殭屍的場景。殭屍會以紅色方塊的形式逐步從屏幕上方下降，玩家需在適當時機按下對應按鈕，才能將殭屍擊敗並獲得分數。這個過程不僅考驗玩家的反應力，還增添了懷舊的遊戲樂趣。</p><p>展示影片: <a href="https://youtube.com/shorts/En82agwY5gk?feature=share">https://youtube.com/shorts/En82agwY5gk?feature=share</a> <img src="/img/zombie_game.png" alt="靈感來自此手機遊戲" /></p><h2 id="元件與結構">元件與結構</h2><figure><img src="/img/zombie_circute.png" alt="遊戲機內部電路圖" /><figcaption aria-hidden="true">遊戲機內部電路圖</figcaption></figure><ul><li>8x8 LED 點矩陣顯示器：作為主要的遊戲顯示區域，利用紅色 LED 點顯示殭屍的下降位置。</li><li>雙位七段顯示器：顯示玩家的當前分數，隨著擊中殭屍次數累加。</li><li>三顆按鈕：每個按鈕分別對應點矩陣顯示器的不同區域，玩家需根據殭屍的出現位置按下相應按鈕。</li><li>Arduino 主控板：核心控制模組，負責處理按鈕輸入、計算分數以及更新 LED 顯示。</li></ul><h3 id="電路連接說明">電路連接說明</h3><p>在電路設計中，8x8 點矩陣、按鈕和七段顯示器通過連接 Arduino 主板完成控制。8x8 點矩陣和七段顯示器需要解碼 IC 的協助，以便 Arduino 能夠有效控制所有顯示燈。每個按鈕的輸入信號通過對應的數位接口傳送到 Arduino，用於判斷玩家的反應時間及對應擊打是否成功。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>案子</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>自動追光太陽能板雲台</title>
+    <link href="/2022/08/04/%E8%87%AA%E5%8B%95%E8%BF%BD%E5%85%89%E5%A4%AA%E9%99%BD%E8%83%BD%E6%9D%BF%E9%9B%B2%E5%8F%B0/"/>
+    <url>/2022/08/04/%E8%87%AA%E5%8B%95%E8%BF%BD%E5%85%89%E5%A4%AA%E9%99%BD%E8%83%BD%E6%9D%BF%E9%9B%B2%E5%8F%B0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="自動追光太陽能板雲台">自動追光太陽能板雲台</h1><h2 id="作品簡介">作品簡介</h2><p>此作品是一個基於 Arduino 開發的 自動追光太陽能板雲台。其設計目的是讓太陽能板能夠自動追蹤光源方向，確保太陽能板隨時正對陽光，從而達到最大的發電效率。通過光敏電阻感應光線強度的變化，該雲台系統能自動調整方向，實現對光源的追蹤。</p><p>展示影片: <a href="https://youtu.be/w4ePBn3A1Oc">https://youtu.be/w4ePBn3A1Oc</a> <img src="/img/ptz.png" /></p><h2 id="系統功能與技術實現">系統功能與技術實現</h2><ul><li><p>感測器架構：雲台上安裝了四個光敏電阻，分別位於太陽能板的四個角落。這些光敏電阻的作用是檢測光線在不同方向的強度，並向控制系統反饋數據。當某一方向的光線較強時，該方向的光敏電阻會檢測到較高的光強度值。</p></li><li><p>控制系統：系統使用 Arduino 作為控制單元，負責接收光敏電阻的數據，並計算各方向的光線強度差異。根據這些數據，Arduino 將指令傳遞給伺服馬達，調整雲台的角度，讓太陽能板朝向光線最強的方向。</p></li><li><p>伺服馬達調整：該雲台配備了兩個伺服馬達，分別控制水平方向和垂直方向的旋轉。Arduino 根據光敏電阻的光強度差異來控制伺服馬達的運動，從而實現雲台的雙軸旋轉，讓太陽能板能夠朝向陽光最強的位置。</p></li><li><p>自動追光：當太陽移動時，光敏電阻檢測到的光強度會隨之變化，Arduino 會根據光線的變化實時調整伺服馬達的角度，讓太陽能板始終保持對準太陽的方向。</p></li></ul><h2 id="系統效益與未來應用">系統效益與未來應用</h2><p>本自動追光雲台能夠顯著提高太陽能板的發電效率。透過自動追蹤陽光，即使在一天中太陽位置不斷變化的情況下，太陽能板依然能夠吸收最多的光能量，提升發電量。此外，該系統還具備一定的擴展性，可以應用在不同尺寸的太陽能板上，並結合大規模的太陽能發電系統。未來若能加入更多的傳感器與更精細的控制系統，將有助於在不同天氣條件下持續提升發電效率，為綠色能源提供更加智能化的解決方案。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>案子</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>水稻植株位置自動標註競賽</title>
+    <link href="/2022/08/04/%E6%B0%B4%E7%A8%BB%E6%A4%8D%E6%A0%AA%E4%BD%8D%E7%BD%AE%E8%87%AA%E5%8B%95%E6%A8%99%E8%A8%BB%E6%A8%A1%E5%9E%8B/"/>
+    <url>/2022/08/04/%E6%B0%B4%E7%A8%BB%E6%A4%8D%E6%A0%AA%E4%BD%8D%E7%BD%AE%E8%87%AA%E5%8B%95%E6%A8%99%E8%A8%BB%E6%A8%A1%E5%9E%8B/</url>
+    
+    <content type="html"><![CDATA[<h1 id="水稻植株位置自動標註競賽">水稻植株位置自動標註競賽</h1><p><img src="/img/rice.png" /></p><h2 id="作品簡介">作品簡介</h2><p>此模型為參加 AIdea 競賽所開發，主要任務是自動標註空拍影像中的水稻植株位置。透過深度學習技術，我們從空拍機拍攝的全彩影像中準確地識別並標註出水稻植株的位置。該模型能夠產生精確的熱點圖（heatmap）來標記水稻的種植點，並且透過閥值篩選確定最終的標記結果。此系統最終達到了 F1 分數 92.6% 的高準確性，表現卓越，並且名列前茅。</p><p><img src="/img/paddy.png" /></p><h2 id="系統功能與技術實現">系統功能與技術實現</h2><ul><li><p>資料處理與標註生成：我們從高解析度的空拍影像中提取水稻的位置信息，並利用影像預處理技術增強影像質量。每張影像中的水稻植株都經過精細標註，確保模型訓練的資料具備高度的準確性。</p></li><li><p>深度學習模型訓練：我們訓練了一個卷積神經網絡（CNN），讓模型能夠從輸入影像中生成水稻植株的熱點圖。模型會將水稻所在位置的熱點標示為高亮區域，並自動適應不同光線、影像解析度和植株密度的變化。</p></li><li><p>熱點圖與閥值篩選：模型生成的熱點圖包含了所有可能的水稻位置，並且我們設定了閥值來篩選出最為顯著的峰值（peak）。這些峰值即為模型所預測的水稻植株位置，有效地避免了誤標和重複標註的情況。</p></li><li><p>結果呈現與準確性評估：我們的模型在競賽測試集上達到了 F1 分數 92.6%，表現非常出色，位列競賽前茅。這意味著模型不僅在準確性上表現出色，也在召回率上達到了很高的水準，有助於提升實際應用中的可靠性。</p></li></ul><h2 id="系統效益與未來應用">系統效益與未來應用</h2><p>本系統能夠大幅減少水稻植株位置標註的人工成本，並且提升了標註速度與精度。這在精準農業中具有顯著的應用潛力，有助於農民精確管理水稻田的種植密度、健康狀況和產量預測。此外，未來可以進一步擴展至其他作物的標註需求，並增加自動化影像分析功能，以促進農業智能化的發展。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>競賽</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>用於邊緣運算之超輕量化道路物件辨識模型的知識蒸餾</title>
+    <link href="/2022/07/27/%E7%94%A8%E6%96%BC%E9%82%8A%E7%B7%A3%E9%81%8B%E7%AE%97%E4%B9%8B%E8%B6%85%E8%BC%95%E9%87%8F%E5%8C%96%E9%81%93%E8%B7%AF%E7%89%A9%E4%BB%B6%E8%BE%A8%E8%AD%98%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%A5%E8%AD%98%E8%92%B8%E9%A4%BE/"/>
+    <url>/2022/07/27/%E7%94%A8%E6%96%BC%E9%82%8A%E7%B7%A3%E9%81%8B%E7%AE%97%E4%B9%8B%E8%B6%85%E8%BC%95%E9%87%8F%E5%8C%96%E9%81%93%E8%B7%AF%E7%89%A9%E4%BB%B6%E8%BE%A8%E8%AD%98%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9F%A5%E8%AD%98%E8%92%B8%E9%A4%BE/</url>
+    
+    <content type="html"><![CDATA[<h1 id="用於邊緣運算之超輕量化道路物件辨識模型的知識蒸餾">用於邊緣運算之超輕量化道路物件辨識模型的知識蒸餾</h1><figure><img src="/img/2023_ICKII.JPG" alt="2023 ICKII BEST CONFERENCE PAPER AWARD" /><figcaption aria-hidden="true">2023 ICKII BEST CONFERENCE PAPER AWARD</figcaption></figure><h2 id="論文摘要與貢獻">論文摘要與貢獻</h2><p>道路物件辨識的應用非常的廣泛，從自動駕駛、智慧車流控制、智慧違規取締等等，然而許多執行這些任務的邊緣運算裝置並沒有高運算能力，因此我們要挑戰在有限的運算時間下，提高我們道路物件辨識模型的精度。此論文的研究動機源自於產學合作，應用環境在於24小時的自動巡邏監視裝置，可放置在嫌疑人經常出沒的街角或巷弄中，並且即時在裝置端辨識與發現可疑的車輛或行人，再迅速發出警訊，因此需要非常輕量的物件辨識模型，讓小型裝置的運算力足以負荷，在有限的運算時間內提高預測的精度。我們使用YOLOv5作為物件辨識模型，目標在搭載Snapdragon 660 Mobile Platform 的Xiaomi Mi A2手機上，利用知識蒸餾保持運算速度的前提下提升學生模型的精度，最後我們在資料集BDD100K將YOLOv5p由mAP 18%提高至mAP 19.3%。</p><p>展示影片: <a href="https://youtube.com/shorts/dv6ixL5FDXk?feature=share">https://youtube.com/shorts/dv6ixL5FDXk?feature=share</a> <img src="/img/YOLOv5p_onphone.png" alt="於小米A2手機運行YOLOv5p" /></p><h3 id="學術貢獻">學術貢獻</h3><ul><li>提出Student-Based Attention Knowledge Distillation的方法</li><li>提出Student Attention Teacher Adapter</li><li>提出Label Assignment in Knowledge Distillation的解決方式</li><li>將超輕量的物件辨識模型YOLOv5p在BDD100K中提升1.3% mAP</li></ul><figure><img src="/img/models-kd.jpg" alt="YOLOv5p-KD是我們的方法，橫軸為預測一張影像花費的時間，縱軸為模型精度" /><figcaption aria-hidden="true">YOLOv5p-KD是我們的方法，橫軸為預測一張影像花費的時間，縱軸為模型精度</figcaption></figure><div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="/img/tnn1.png" /></div><div class="group-image-wrap"><img src="/img/tnn2.png" /></div></div></div><h2 id="資料集">資料集</h2><p><img src="/img/BDD100K.png" /> <img src="/img/BDD.png" alt="BDD100K Dataset Overview" /> <img src="/img/BDD_inst.png" /> BDD100K是一個道路街景為主的大型資料集，BDD100K資料集總共有10萬張照片，分別是70000張訓練集，10000張驗證集和20000張測試集，而且從上面的統計圖表可以得知BDD100K中存在大量的物體遮擋與截斷，所以是一個相對有挑戰的資料集。</p><h2 id="提出方法">提出方法</h2><p><img src="/img/KDflow.png" /></p><h3 id="student-based-attention-knowledge-distillation">Student-Based Attention Knowledge Distillation</h3><p>上圖是我們提出的Student-Based Attention Knowledge Distillation方法的流程圖，我們同時使用了Response-Based和Feature-Based兩種Knowledge Distillation方法，Feature-Based的部分，我們選擇抽取出運算最多的CSP Blocks的輸出當作學習用的特徵圖，老師和學生同時都有8個CSP Block，所以我們將8個特徵圖都做教學，Response-Based的部分，物件辨識模型總共會有三種輸出，分別為Location, Objectness和Classification，在這之中，我們解決了Knowledge Distillation Label Assignment的問題，並將Location和Objectness分別計算IOU與BCE Loss，Classification利用老師的Pseudo labels與學生的logit計算KL divergence Loss，用負標籤的Dark Knowledge來提升學生的精度。</p><h3 id="student-attention-teacher-adapter">Student Attention Teacher Adapter</h3><p><img src="/img/SATA.png" /> 上圖是我們提出的Student Attention Teacher Adapter(SATA)，老師的特徵圖會經過SATA後會縮小到與學生特徵圖一樣大小，再計算MSE Loss，所以我們可以得到中間層Feature-Based KD loss，<span class="math inline">\(l\)</span>是指使用的layer數量 <span class="math display">\[\mathcal{L}_{fea}=\frac{1}{l}\sum_{i}^{l}\mathcal{L}_{MSE}\left(F_s,SATA(F_t,F_s)\right)\]</span></p><h3 id="lable-assignment-in-knowledge-distillation">Lable Assignment in Knowledge Distillation</h3><p><img src="/img/LA.png" /> 在KD的時候，我們必須考慮這個問題去避免讓老師的negative box去教導學生的positive box造成精度的下降甚至歸零，因此我們將老師與GT先做label assignment得到老師的positive box set <span class="math display">\[b_t=\left \{ b_{t1},b_{t2},\dots,b_{tn}\right \},\]</span> 和學生與GT label assignment後得到的positive box set <span class="math display">\[b_s=\left \{ b_{s1},b_{s2},\dots,b_{sm}\right \},\]</span> 並且在KD時學生只會挑出i_t中的框和老師計算loss，確保老師都是用positive box做教學。</p><h3 id="response-based-knowledge-distillation">Response-Based Knowledge Distillation</h3>在最後模型的輸出層，我們用了三種的KD Loss去做教學，<span class="math inline">\(\gamma_1\)</span>和<span class="math inline">\(\gamma_2\)</span>是權重係數</p><p>Bounding Box KD Loss: <span class="math display">\[\mathcal{L}_{box-kd}=\mathcal{L}_{CIoU}\left(b_s\right)+\gamma_1\mathcal{L}_{CIoU}\left(b_t\right)\]</span> Objectness KD Loss: <span class="math display">\[\mathcal{L}_{obj-kd}=\mathcal{L}_{BCE-obj}\left(b_s\right)+\gamma_1\mathcal{L}_{BCE-obj}\left(b_t\right)\]</span> Classification KD Loss: <span class="math display">\[\mathcal{L}_{cls-kd}=\mathcal{L}_{BCE-cls}\left(b_s\right)+\gamma_2\mathcal{L}_{KL-div}\left(b_t\right)\]</span> 所以我們可以得到輸出層Response-Based KD loss為 <span class="math display">\[\mathcal{L}_{res}=\mathcal{L}_{box-kd}+\mathcal{L}_{obj-kd}+\mathcal{L}_{cls-kd}\]</span></p><h3 id="total-knowledge-distillation-loss">Total Knowledge Distillation Loss</h3><p>最終我們將我們所有的loss加總得到我們用於訓練的總損失函數，<span class="math inline">\(\beta\)</span>是權重係數 <span class="math display">\[\mathcal{L}_{total}={\beta\mathcal{L}}_{fea}+\mathcal{L}_{res}\]</span></p><h2 id="結果展示">結果展示</h2><p><img src="/img/result.jpg" /> <img src="/img/demo.jpg" /></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>產學計畫</tag>
+      
+      <tag>碩士論文</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>基於人工智慧之頸部淋巴腫瘤超音波輔助診斷系統</title>
+    <link href="/2022/07/25/%E5%9F%BA%E6%96%BC%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E4%B9%8B%E9%A0%B8%E9%83%A8%E6%B7%8B%E5%B7%B4%E8%85%AB%E7%98%A4%E8%B6%85%E9%9F%B3%E6%B3%A2%E8%BC%94%E5%8A%A9%E8%A8%BA%E6%96%B7%E7%B3%BB%E7%B5%B1/"/>
+    <url>/2022/07/25/%E5%9F%BA%E6%96%BC%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E4%B9%8B%E9%A0%B8%E9%83%A8%E6%B7%8B%E5%B7%B4%E8%85%AB%E7%98%A4%E8%B6%85%E9%9F%B3%E6%B3%A2%E8%BC%94%E5%8A%A9%E8%A8%BA%E6%96%B7%E7%B3%BB%E7%B5%B1/</url>
+    
+    <content type="html"><![CDATA[<h1 id="基於人工智慧之頸部淋巴腫瘤超音波輔助診斷系統">基於人工智慧之頸部淋巴腫瘤超音波輔助診斷系統</h1><h2 id="作品簡介">作品簡介</h2><p>此系統是與亞東紀念醫院合作開發的產學研究項目，旨在運用人工智慧與深度學習技術，來提升頸部淋巴腺腫瘤診斷的準確性。我們將淋巴腺腫瘤的超音波影像輸入深度學習模型，進行良惡性腫瘤的分類預測，並使用影像處理技術提取腫瘤的紋理特徵，以便輔助醫師進行判斷。</p><p><img src="/img/tui.png" /></p><h2 id="系統功能與技術實現">系統功能與技術實現</h2><p><img src="/img/tuflow.png" /></p><ul><li><p>分類模型：基於深度學習的卷積神經網絡（CNN），系統接受淋巴腺腫瘤的超音波影像作為輸入，並進行良性或惡性腫瘤的分類。經過大量的訓練與優化，該模型達到了 90% 的準確度（Accuracy） 與 91% 的 F1 分數，確保了診斷結果的可靠性。</p></li><li><p>紋理特徵分析：除了分類預測，系統還針對超音波影像的紋理特徵進行分析，包括對比度、熵、角二次矩（ASM）以及逆差異矩（IDM）等特徵，這些紋理特徵有助於醫師進一步了解腫瘤的性質。</p></li><li><p>UI界面展示：設計了一個直觀的用戶界面，醫師可以通過界面選取超音波影像進行分析，並查看影像的紋理特徵與分類結果。界面還顯示了基於影像與紋理特徵的兩種診斷結果：包含影像與臨床數據的預測準確率（如年齡、部位等） 與 僅基於影像的預測準確率，以便醫師綜合考量診斷結果。</p></li><li><p>技術創新與應用價值：系統的輔助診斷功能為醫師提供了更為精確的判斷依據，降低了誤診率，提升了診斷效率。藉由紋理特徵分析，該系統提供了更豐富的腫瘤影像信息，有助於醫師進行更加深入的病灶分析。</p></li></ul><h2 id="系統效益">系統效益</h2><p>本系統大幅提升了頸部淋巴腫瘤診斷的效率與準確性。深度學習模型的高準確性預測結果，有助於減少醫師的診斷負擔，並提高診斷的可靠性。未來，我們將進一步優化模型及界面，以便在更多醫療機構中推廣應用，助力醫療影像診斷的智能化發展。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>大學專題</tag>
+      
+      <tag>產學計畫</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
