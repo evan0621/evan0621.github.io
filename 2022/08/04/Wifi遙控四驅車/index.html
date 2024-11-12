@@ -28,7 +28,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="http://example.com/img/car.png">
 <meta property="article:published_time" content="2022-08-04T05:16:34.000Z">
-<meta property="article:modified_time" content="2024-11-11T13:57:51.752Z">
+<meta property="article:modified_time" content="2024-11-12T14:54:09.202Z">
 <meta property="article:author" content="Evan Hsu">
 <meta property="article:tag" content="案子">
 <meta name="twitter:card" content="summary_large_image">
@@ -221,19 +221,16 @@
                 
                 <h1 id="wifi-遙控四驅車">Wifi 遙控四驅車</h1>
 <h2 id="作品簡介">作品簡介</h2>
-<p>這款 WiFi 遙控四驅車 是一個利用網路技術遠端遙控的智能車，旨在透過無線連接進行前後控制。該四驅車使用了 ESP8266 模組進行 MQTT 通訊，並通過繼電器控制電流流向來改變馬達轉向，使車輛能夠靈活地向前或向後行駛。此裝置展現了物聯網技術在移動設備中的應用，為無線控制車輛提供了一個簡單的方案。</p>
+<p>這款 WiFi 遙控四驅車 是一個利用IOT網路技術遙控的四驅車，旨在透過無線連接進行前後控制。該四驅車使用了 ESP8266 模組進行 MQTT 通訊，並通過繼電器實現H橋來控制電流流向來改變馬達轉向，使車輛能夠靈活地向前或向後行駛。</p>
 <p>展示影片: <a target="_blank" rel="noopener" href="https://youtube.com/shorts/KSWWMaxipGc?feature=share">https://youtube.com/shorts/KSWWMaxipGc?feature=share</a></p>
 <p><img src="/img/car.png" srcset="/img/loading.gif" lazyload /></p>
 <h2 id="元件與結構">元件與結構</h2>
 <p><img src="/img/car_inside.png" srcset="/img/loading.gif" lazyload /></p>
 <ul>
-<li>ESP8266 模組：作為四驅車的主控模組，透過 WiFi 連接到網路，並經由 MQTT 通訊協議接收遠端遙控器的指令。</li>
-<li>四驅馬達：每個輪子配備獨立馬達，提供強勁的驅動力，確保車輛在各種地形上都能平穩行駛。</li>
-<li>繼電器模組：用於切換電流方向，以改變馬達的轉動方向，從而實現車輛的前進與後退。</li>
-<li>遙控器：搭配兩顆按鈕（綠色和紅色），分別用來控制四驅車的前進與後退，操作簡單直觀。 工作原理</li>
-<li>遠端控制：ESP8266 模組連接到 WiFi 網路，並通過 MQTT 通訊協議與遙控器進行數據交換。</li>
-<li>訊號接收：當遙控器上的按鈕被按下時，MQTT 伺服器會將指令傳送至 ESP8266，該模組會解析並將指令傳送至繼電器模組。</li>
-<li>馬達控制：繼電器模組根據接收到的指令改變電流方向，從而控制馬達的轉動方向，實現車輛的前進或後退。</li>
+<li><strong>ESP8266 模組</strong>：作為四驅車的主控模組，透過 WiFi 連接到網路，並經由 MQTT 通訊協議接收遠端遙控器的指令。</li>
+<li><strong>四驅馬達</strong>：提供車輛的驅動力。</li>
+<li><strong>繼電器模組</strong>：實現H橋用於切換電流方向，以改變馬達的轉動方向，從而實現車輛的前進與後退。</li>
+<li><strong>遙控器</strong>：搭配兩顆按鈕（綠色和紅色），分別用來控制四驅車的前進與後退，簡單直觀。</li>
 </ul>
 
                 
