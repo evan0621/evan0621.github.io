@@ -508,6 +508,7 @@
         return;
       }
       var text = subtitle.getAttribute('data-typed-text');
+      if (window.__i18nText) { text = window.__i18nText(text); }
       
         typing(text);
       

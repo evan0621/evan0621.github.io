@@ -89,6 +89,14 @@
     return null;
   }
 
+  /* Early hook: lets inline scripts (e.g. the typed.js banner) translate
+     text synchronously before DOMContentLoaded */
+  window.__i18nText = function (t) {
+    if (LANG !== 'en' || !t) return t;
+    var r = tr(String(t).trim());
+    return r === null ? t : r;
+  };
+
   function apply() {
     /* Remove blocks of the inactive language so TOC/anchors only see one */
     var kill = LANG === 'en' ? '.i18n-zh' : '.i18n-en';
