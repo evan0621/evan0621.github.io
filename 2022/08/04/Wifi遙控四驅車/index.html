@@ -7,6 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <script src="/js/i18n.js"></script>
+
 
   <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
   <link rel="icon" href="/img/fluid.png">
@@ -218,6 +220,7 @@
             
             
               <div class="markdown-body">
+<div class="i18n-zh">
                 
                 <h1 id="wifi-遙控四驅車">Wifi 遙控四驅車</h1>
 <h2 id="作品簡介">作品簡介</h2>
@@ -244,6 +247,31 @@
 
                 
               </div>
+<div class="i18n-en">
+<h1 id="wifi-4wd-car">WiFi-Controlled 4WD Car</h1>
+<h2 id="overview">Overview</h2>
+<p>This WiFi-controlled 4WD car is driven over an IoT network connection for forward and backward movement. It uses an ESP8266 module for MQTT communication, and relays implement an H-bridge that switches the current direction to reverse the motors, letting the vehicle move flexibly forward or backward.</p>
+<h2 id="demo-video">Demo Video</h2>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; text-align: center;">
+<p><iframe
+    src="https://youtube.com/embed/KSWWMaxipGc?feature=share"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen> </iframe></p>
+</div>
+<p><img src="/img/car.png" srcset="/img/loading.gif" lazyload /></p>
+<h2 id="components-structure">Components &amp; Structure</h2>
+<p><img src="/img/car_inside.png" srcset="/img/loading.gif" lazyload /></p>
+<ul>
+<li><strong>ESP8266 module</strong>: The car's main controller — connects to the network over WiFi and receives commands from the remote via the MQTT protocol.</li>
+<li><strong>4WD motors</strong>: Provide the vehicle's driving force.</li>
+<li><strong>Relay module</strong>: Implements an H-bridge to switch current direction and reverse the motors, enabling forward and backward motion.</li>
+<li><strong>Remote control</strong>: Two buttons (green and red) control forward and backward movement — simple and intuitive.</li>
+</ul>
+</div>
+</div>
             
             <hr/>
             <div>

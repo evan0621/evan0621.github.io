@@ -7,6 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <script src="/js/i18n.js"></script>
+
 
   <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
   <link rel="icon" href="/img/fluid.png">
@@ -218,6 +220,7 @@
             
             
               <div class="markdown-body">
+<div class="i18n-zh">
                 
                 <h1 id="水稻植株位置自動標註競賽">水稻植株位置自動標註競賽</h1>
 <p><img src="/img/rice.png" srcset="/img/loading.gif" lazyload /></p>
@@ -235,6 +238,22 @@
 
                 
               </div>
+<div class="i18n-en">
+<h1 id="rice-auto-labeling">Rice Seedling Auto-Labeling Competition</h1>
+<p><img src="/img/rice.png" srcset="/img/loading.gif" lazyload /></p>
+<h2 id="overview">Overview</h2>
+<p>This model was developed for the AIdea competition, where the main task is to automatically label rice seedling positions in aerial imagery. Using deep learning, we accurately detect and label rice seedling positions in full-color images captured by drones. The model generates a precise heatmap marking the planting points, and threshold filtering determines the final labels — ultimately reaching an F1 score of 92.6% and a top-tier ranking in the competition.</p>
+<p><img src="/img/paddy.png" srcset="/img/loading.gif" lazyload /></p>
+<h2 id="technical-implementation">Technical Implementation</h2>
+<ul>
+<li><p><strong>Data augmentation</strong>: Image preprocessing techniques increase the diversity of the imagery, ensuring highly accurate training data.</p></li>
+<li><p><strong>Model</strong>: Implemented with keypoint-detection deep learning models such as MS-SFANet, generating rice-seedling heatmaps from the input images.</p></li>
+<li><p><strong>Heatmap &amp; threshold filtering</strong>: The generated heatmap contains all candidate rice positions; we set a threshold to filter out the most significant peaks, which are the model's predicted seedling positions.</p></li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>The final auto-labeling model reaches an F1 score of 92.6%, effectively reducing manual labeling costs and demonstrating its application potential in precision agriculture.</p>
+</div>
+</div>
             
             <hr/>
             <div>

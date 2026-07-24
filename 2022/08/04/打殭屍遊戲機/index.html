@@ -7,6 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <script src="/js/i18n.js"></script>
+
 
   <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
   <link rel="icon" href="/img/fluid.png">
@@ -218,6 +220,7 @@
             
             
               <div class="markdown-body">
+<div class="i18n-zh">
                 
                 <h1 id="打殭屍遊戲機">打殭屍遊戲機</h1>
 <h2 id="作品簡介">作品簡介</h2>
@@ -250,6 +253,37 @@
 
                 
               </div>
+<div class="i18n-en">
+<h1 id="whack-a-zombie">Whack-a-Zombie Arcade Game</h1>
+<h2 id="overview">Overview</h2>
+<p>This whack-a-zombie game console is an Arduino-based mini gaming device, inspired by a classic mobile game from childhood. It uses an 8x8 LED matrix display, a two-digit seven-segment display, and three buttons to simulate a zombie-whacking scene. Zombies appear as red blocks at the top of the screen, and the player races to score as many points as possible within 30 seconds — a test of reflexes with a dose of nostalgic fun.</p>
+<h2 id="demo-video">Demo Video</h2>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; text-align: center;">
+<p><iframe
+    src="https://youtube.com/embed/En82agwY5gk?feature=share"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen> </iframe></p>
+</div>
+<figure>
+<img src="/img/zombie_game.png" srcset="/img/loading.gif" lazyload alt="Inspired by this mobile game" /><figcaption aria-hidden="true">Inspired by this mobile game</figcaption>
+</figure>
+<h2 id="components-structure">Components &amp; Structure</h2>
+<figure>
+<img src="/img/zombie_circute.png" srcset="/img/loading.gif" lazyload alt="Internal circuit diagram of the game console" /><figcaption aria-hidden="true">Internal circuit diagram of the game console</figcaption>
+</figure>
+<ul>
+<li><strong>8x8 LED matrix display</strong>: The main game display area; red LED dots show the zombies' positions.</li>
+<li><strong>Two-digit seven-segment display</strong>: Shows the player's current score, accumulating with each zombie hit.</li>
+<li><strong>Three buttons</strong>: Each button corresponds to a different region of the matrix; the player presses the matching button based on where a zombie appears.</li>
+<li><strong>Arduino board</strong>: The core control module — handles button input, score counting, and LED display updates.</li>
+</ul>
+<h3 id="circuit-notes">Circuit Notes</h3>
+<p>In the circuit design, the 8x8 matrix, buttons, and seven-segment display are all wired to the Arduino board. The seven-segment display requires a decoder IC so the Arduino can display the numeric score. Each button's input signal goes to a corresponding digital pin, used to judge the player's reaction time and whether a hit was successful.</p>
+</div>
+</div>
             
             <hr/>
             <div>

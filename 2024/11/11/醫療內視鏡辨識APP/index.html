@@ -7,6 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <script src="/js/i18n.js"></script>
+
 
   <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
   <link rel="icon" href="/img/fluid.png">
@@ -218,6 +220,7 @@
             
             
               <div class="markdown-body">
+<div class="i18n-zh">
                 
                 <h1 id="醫療內視鏡辨識app">醫療內視鏡辨識APP</h1>
 <h2 id="作品簡介">作品簡介</h2>
@@ -243,6 +246,30 @@
 
                 
               </div>
+<div class="i18n-en">
+<h1 id="endoscope-app">Medical Endoscope Recognition App</h1>
+<h2 id="overview">Overview</h2>
+<p>Medical endoscopes come in a wide variety of models and sizes, so in their daily work medical staff often spend a great deal of time looking up and matching different endoscope models. Manual identification is time-consuming and error-prone, so the goal of this project was to develop an automatic recognition app.</p>
+<h2 id="demo-video">Demo Video</h2>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; text-align: center;">
+<p><iframe
+    src="https://youtube.com/embed/Va9oA0SzIDU?feature=share"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen> </iframe></p>
+</div>
+<p><img src="/img/scope.png" srcset="/img/loading.gif" lazyload /></p>
+<h2 id="technical-implementation">Technical Implementation</h2>
+<ul>
+<li><p><strong>Model training</strong>: We used YOLO for recognition. After training on a large set of images, the model automatically identifies the shape features of an endoscope and matches the corresponding model number.</p></li>
+<li><p><strong>Mobile deployment</strong>: For the convenience of medical staff, the app uses a simple, intuitive interface — the user just opens the camera and points it at an endoscope to see real-time recognition results on screen, with no extra steps required.</p></li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>The endoscope recognition app developed in this project successfully solves the difficulty medical staff face when identifying endoscope models, improving efficiency and reducing the risk of errors. With accurate YOLO-based recognition and real-time display on a phone, users can quickly obtain the endoscope model number with a simplified workflow. This app is set to become an efficient and reliable assistant in medical work.</p>
+</div>
+</div>
             
             <hr/>
             <div>

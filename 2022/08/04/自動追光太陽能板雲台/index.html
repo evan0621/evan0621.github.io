@@ -7,6 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <script src="/js/i18n.js"></script>
+
 
   <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
   <link rel="icon" href="/img/fluid.png">
@@ -218,6 +220,7 @@
             
             
               <div class="markdown-body">
+<div class="i18n-zh">
                 
                 <h1 id="自動追光太陽能板雲台">自動追光太陽能板雲台</h1>
 <h2 id="作品簡介">作品簡介</h2>
@@ -243,6 +246,30 @@
 
                 
               </div>
+<div class="i18n-en">
+<h1 id="sun-tracking-gimbal">Sun-Tracking Solar Panel Gimbal</h1>
+<h2 id="overview">Overview</h2>
+<p>This project is an Arduino-based sun-tracking solar panel gimbal. It is designed to keep a solar panel automatically tracking the light source so the panel always faces the sun directly, achieving maximum power-generation efficiency. Photoresistors sense changes in light intensity, and the gimbal automatically adjusts its orientation to follow the light.</p>
+<h2 id="demo-video">Demo Video</h2>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; text-align: center;">
+<p><iframe
+    src="https://www.youtube.com/embed/w4ePBn3A1Oc?si=le10A4TJB8f6jPLE"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen> </iframe></p>
+</div>
+<p><img src="/img/ptz.png" srcset="/img/loading.gif" lazyload /></p>
+<h2 id="components-structure">Components &amp; Structure</h2>
+<ul>
+<li><p><strong>Sensor layout</strong>: Four photoresistors are mounted at the four corners of the solar panel. They detect light intensity from different directions and feed the readings back to the control system — when light is stronger from one direction, that photoresistor reports a higher value.</p></li>
+<li><p><strong>Control system</strong>: An Arduino serves as the control unit, receiving the photoresistor data and computing the light-intensity differences between directions. Based on this data, it commands the servo motors to adjust the gimbal's angle so the panel faces the strongest light.</p></li>
+<li><p><strong>Servo adjustment</strong>: The gimbal is equipped with two servo motors controlling horizontal and vertical rotation. The Arduino drives them according to the intensity differences, achieving two-axis rotation so the panel points toward the brightest direction.</p></li>
+<li><p><strong>Automatic tracking</strong>: As the sun moves, the detected light intensities change, and the Arduino adjusts the servo angles in real time so the solar panel always stays aligned with the sun.</p></li>
+</ul>
+</div>
+</div>
             
             <hr/>
             <div>

@@ -7,6 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <script src="/js/i18n.js"></script>
+
 
   <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
   <link rel="icon" href="/img/fluid.png">
@@ -219,6 +221,7 @@
             
             
               <div class="markdown-body">
+<div class="i18n-zh">
                 
                 <h1 id="基於人工智慧之頸部淋巴腫瘤超音波輔助診斷系統">基於人工智慧之頸部淋巴腫瘤超音波輔助診斷系統</h1>
 <h2 id="作品簡介">作品簡介</h2>
@@ -238,6 +241,24 @@
 
                 
               </div>
+<div class="i18n-en">
+<h1 id="ai-ultrasound-diagnosis">AI-Based Ultrasound-Assisted Diagnosis System for Neck Lymph Node Tumors</h1>
+<h2 id="overview">Overview</h2>
+<p>This system was developed as an industry-academia research project with Far Eastern Memorial Hospital, aiming to improve the diagnostic accuracy of neck lymph node tumors using artificial intelligence and deep learning. We apply image processing techniques to extract texture features from ultrasound images of lymph node tumors and feed them into a deep learning model to classify tumors as benign or malignant. The model achieved 90% accuracy and a 91% F1 score, assisting physicians in their diagnosis.</p>
+<figure>
+<img src="/img/tui.png" srcset="/img/loading.gif" lazyload alt="Ultrasound-assisted diagnosis system for neck lymph node tumors" /><figcaption aria-hidden="true">Ultrasound-assisted diagnosis system for neck lymph node tumors</figcaption>
+</figure>
+<h2 id="technical-implementation">Technical Implementation</h2>
+<p><img src="/img/tuflow.png" srcset="/img/loading.gif" lazyload /></p>
+<ul>
+<li><p><strong>Classification model</strong>: Based on a deep learning Vision Transformer. The system takes elastography ultrasound videos of lymph node tumors as input and classifies them as benign or malignant.</p></li>
+<li><p><strong>Texture feature analysis</strong>: Besides classification, the system analyzes texture features of the ultrasound images — including contrast, entropy, angular second moment (ASM), and inverse difference moment (IDM) — helping physicians better understand the tumor's characteristics.</p></li>
+<li><p><strong>UI</strong>: An intuitive user interface lets physicians select ultrasound images for analysis and view both the texture features and the classification results.</p></li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>This system assists physicians in diagnosing neck lymph node tumors with deep learning, providing accurate benign/malignant classification (90% accuracy, 91% F1 score) and texture feature analysis for additional diagnostic information. Its intuitive interface makes it easy to operate and supports clinical decision-making.</p>
+</div>
+</div>
             
             <hr/>
             <div>
