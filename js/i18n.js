@@ -43,7 +43,7 @@
     '競賽': 'Competition',
     /* Post titles */
     '基於人工智慧之頸部淋巴腫瘤超音波輔助診斷系統': 'AI-Based Ultrasound-Assisted Diagnosis System for Neck Lymph Node Tumors',
-    '用於邊緣運算之超輕量化道路物件辨識模型的知識蒸餾': 'Knowledge Distillation for Ultra-Lightweight Road Object Detection Models on Edge Devices',
+    '用於邊緣運算之超輕量化道路物件辨識模型的知識蒸餾': 'Knowledge Distillation Boosted Ultra-light Weight Road Object Detection on Edge Device',
     'Wifi 遙控四驅車': 'WiFi-Controlled 4WD Car',
     'Wifi遙控四驅車': 'WiFi-Controlled 4WD Car',
     '打殭屍遊戲機': 'Whack-a-Zombie Arcade Game',
